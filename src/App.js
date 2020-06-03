@@ -1,26 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./style.css";
+import ReactPageScroller from "react-page-scroller";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentPage: null
+    };
+  }
+
+  handlePageChange = number => {
+    this.setState({ currentPage: number });
+  };
+
+  render = () => {
+    return (
+      <>
+        <ReactPageScroller
+          pageOnChange={this.handlePageChange}
+          customPageNumber={this.state.currentPage}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+          <div className="back-main" >
+            <img src="https://zupimages.net/up/20/23/unee.png"
+              alt="background" />
+          </div>
+
+          <div className="page2" >
+            <img src="https://zupimages.net/up/20/23/1a7o.png"
+              alt="background" />
+          </div>
+
+        </ReactPageScroller>
+      </>
+    )
+  }
 }
 
 export default App;
