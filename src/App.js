@@ -1,6 +1,7 @@
 import React from 'react';
 import "./style.css";
 import ReactPageScroller from "react-page-scroller";
+import Carousel from 'react-bootstrap/Carousel'
 
 class App extends React.Component {
   constructor(props) {
@@ -62,6 +63,39 @@ class App extends React.Component {
             </div>
           </div>
 
+          <Carousel controls={false} pause={false}>
+            <Carousel.Item>
+              <div className="d-block w-100 map1"></div>
+              <Carousel.Caption>
+                <h3>MAP ANVELL</h3>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="d-block w-100 map2"></div>
+              <Carousel.Caption>
+                <h3>MAP JORGHELM</h3>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="d-block w-100 map3"></div>
+              <Carousel.Caption>
+                <h3>MAP SHANUR</h3>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="d-block w-100 map4"></div>
+              <Carousel.Caption>
+                <h3>MAP MOYOCAN</h3>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="d-block w-100 map5"></div>
+              <Carousel.Caption>
+                <h3>MAP NEBULOS</h3>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+
           <div className="column">
             <div>
               <p>L'équipe d'Avell's Heroes est composé de :</p>
@@ -74,13 +108,13 @@ class App extends React.Component {
                 <p>Alex DUVIVIER</p>
                 <p>Martin BULTEAU</p>
               </div>
-              
+
               <div className="column">
                 <img src="" alt="logo anvell's" />
                 <p>GAME DESIGN :</p>
                 <p>Valentin FIETTE</p>
               </div>
-              
+
               <div className="column">
                 <img src="" alt="logo anvell's" />
                 <p>TECH ART :</p>

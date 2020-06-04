@@ -6,17 +6,21 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font: inherit;
     vertical-align: baseline;
     color: white;
+    font-family: "Palatino Linotype";
 }
 
 body {
     background-image: url("https://zupimages.net/up/20/23/nd3e.png");
     background-size: cover;
+    background-position: center;
 }
 
 .row {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: unset;
+    margin: 0;
 }
 
 .column {
@@ -29,8 +33,8 @@ body {
 /* Page 1 (main) */
 
 .back-main {
-    height: calc(100vh - 7.5rem);
-    width: calc(100% - 7.5rem);
+    height: 100vh;
+    width: 100%;
     padding: 3.75rem;
 }
 
@@ -43,8 +47,8 @@ body {
 /* Page 2 (carac perso) */
 
 .page2 {
-    height: calc(100vh - 7.5rem);
-    width: calc(100% - 7.5rem);
+    height: 100vh;
+    width: 100%;
     padding: 3.75rem;
 }
 
@@ -92,11 +96,46 @@ body {
 
 .ligne1 p {
     font-size: 0.9rem;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .page2-button img {
     width: 70px;
     height: 70px;
     cursor: pointer;
+}
+
+/* */
+
+/* Page 3 */
+
+.map1 {
+    background-image: url("https://lh5.googleusercontent.com/j5KAVyN9QXiW5RME21aw_zL795lmAM2PYb9t1iuagOMQke-jXteDRB_VXR0-Y5A2uc64LYcpaXsystooaM1CTLmMtjv-j4fRu0dGsoBecS97Q26TiNzhPErNDsCts2_tiJ8IVsLrlzE");
+}
+
+.map2 {
+    background-image: url("https://lh4.googleusercontent.com/EY7GaFApXjQxlPYvrSITnUlCONNWRJddAw4t-vBJ5hk6_71Ew5xeOLZsEvrMKR7rZ2kYRdCpHHPCC-DOeUPF2ldZuvM5lh5OW4HANkkZbnBhovDRN9wGazAgGdXIhakq63aeP5TUujs");
+}
+
+.map3 {
+    background-image: url("https://lh3.googleusercontent.com/VzxdzLVNPiG0WDgX3c5umUVrTqNsDAIYeXcj2S4UDUZslWHNIma4TAUFQnXDEG5SrtC-na8zbRkMTrQflJVNvZnzSSirlkGONXJGxX5x1i33afQuwUirwCw761TnpwZ1E8frfoWVzR8");
+}
+
+.map4 {
+    background-image: url("https://lh5.googleusercontent.com/S6Nmfpc7W6WlffR75JTIX6S5vPu8xIYB9fNSPQ3tE-XrRClo_HHvBdAVO312KDEebKwSAXDgOheKPBwWLgOilN3PfITpin4GwBz_EhLuLYre4ph1vec07LRF7awdQV3UPveu6CwrmR8");
+}
+
+.map5 {
+    background-image: url("https://lh4.googleusercontent.com/G3h-gzJbtooAmDABV92R6jI_H7eilLcGW3Su_sDFHfFMFPxPkDxsSQ18FlgMT_u-hJrBFsgykh03Ch2OEZSxt5gAJOl-ninqT0Np3w0elVFva7hPL1u_kToXHIPhgoJAIHpwuqBbWjQ");
+}
+
+.map1, .map2, .map3, .map4, .map5 {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption h3 {
+    font-weight: bold;
+    font-size: 1.2rem;
 }
