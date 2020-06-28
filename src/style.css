@@ -65,7 +65,7 @@ body {
 
 .perso {
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
 }
 
 .hr {
@@ -83,25 +83,25 @@ body {
 .page2-button {
     width: 40%;
     height: 100%;
+    display: flex;
     flex-wrap: wrap;
-}
-
-.ligne1 {
-    width: 92.423%;
-    height: 20.331%;
-    max-width: 500px;
-    max-height: 160px;
-    justify-content: space-evenly;
-}
-
-.ligne1 p {
-    font-size: 0.9rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .page2-button img {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     cursor: pointer;
+    padding: 10px;
+}
+
+.page2-button p {
+    cursor: pointer;
+}
+
+.ligne {
+    display: flex;
 }
 
 /* */

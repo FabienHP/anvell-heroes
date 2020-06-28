@@ -7,7 +7,8 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentPage: null
+      currentPage: null,
+      activeIndex: 0
     };
   }
 
@@ -31,30 +32,43 @@ class App extends React.Component {
             <div className="page2-max row">
               {/* Perso/stats */}
               <div className="page2-perso column">
-                <img className="perso" src="https://zupimages.net/up/20/23/8wjn.png" alt="assassin" />
+                <Carousel activeIndex={this.state.activeIndex} controls={false} indicators={false} pause={false} interval={0}>
+                  <Carousel.Item>
+                    <img className="perso" src="./images/retake_seketh.png" alt="assassin" />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img className="perso" src="./images/png_arendar.png" alt="guerrier" />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img className="perso" src="./images/png_archer.png" alt="archer" />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img className="perso" src="./images/mage.png" alt="mage" />
+                  </Carousel.Item>
+                </Carousel>
                 <div className="hr"></div>
                 <img className="stats" src="https://zupimages.net/up/20/23/jtyd.png" alt="stats assassin" />
               </div>
 
               {/* Role bouton */}
-              <div className="page2-button column">
-                <div className="ligne1 row">
-                  <div className="column">
-                    <img className="assassin" src="https://vignette.wikia.nocookie.net/leagueoflegends/images/2/28/Slayer_icon.png/revision/latest?cb=20181117143556" alt="assassin bouton" />
+              <div className="page2-button">
+                <div className="ligne">
+                  <div className="column" onClick={() => this.setState({ activeIndex: 0 })}>
+                    <img className="assassin" src="./images/assassin.png" alt="assassin bouton" />
                     <p>ASSASSIN</p>
                   </div>
-                  <div className="column">
-                    <img className="tank" src="https://vignette.wikia.nocookie.net/leagueoflegends/images/5/5a/Tank_icon.png/revision/latest?cb=20181117143558" alt="assassin bouton" />
-                    <p>TANK</p>
+                  <div className="column" onClick={() => this.setState({ activeIndex: 1 })}>
+                    <img className="tank" src="./images/guerrier.png" alt="guerrier bouton" />
+                    <p>GUERRIER</p>
                   </div>
                 </div>
-                <div className="ligne1 row">
-                  <div className="column">
-                    <img className="archer" src="https://vignette.wikia.nocookie.net/leagueoflegends/images/7/7f/Marksman_icon.png/revision/latest?cb=20181117143555" alt="assassin bouton" />
+                <div className="ligne">
+                  <div className="column" onClick={() => this.setState({ activeIndex: 2 })}>
+                    <img className="archer" src="./images/archer.png" alt="archer bouton" />
                     <p>ARCHER</p>
                   </div>
-                  <div className="column">
-                    <img className="mage" src="https://vignette.wikia.nocookie.net/leagueoflegends/images/2/28/Mage_icon.png/revision/latest?cb=20181117143555" alt="assassin bouton" />
+                  <div className="column" onClick={() => this.setState({ activeIndex: 3 })}>
+                    <img className="mage" src="./images/mage.png" alt="mage bouton" />
                     <p>MAGE</p>
                   </div>
                 </div>
