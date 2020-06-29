@@ -134,10 +134,14 @@ body {
     z-index: -100;
 }
 
+.parent-download {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
 .download-link {
-    position: relative;
-    top: 90%;
-    left: 50%
+    margin-bottom: 100px;
 }
 
 .download-link button {

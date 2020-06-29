@@ -29,8 +29,8 @@ class App extends React.Component {
             <img src="https://zupimages.net/up/20/23/unee.png" alt="background" />
           </div>
 
-          <div className="w-100 h-100">
-            <iframe className="video" width="100%" height="100%" title="Youtube video" src="https://www.youtube.com/embed/eZLqcrDu1tE?autoplay=1&loop=1&controls=0&mute=1"></iframe>
+          <div className="w-100 h-100 parent-download">
+            <iframe className="video" width="100%" height="100%" title="Youtube video" src="https://www.youtube.com/embed/eZLqcrDu1tE?autoplay=1&loop=1&controls=0&mute=1" allow="loop"></iframe>
             <a className="download-link" href="https://drive.google.com/u/0/uc?export=download&confirm=Frq4&id=1gwjOHuXEzffKCaL61OhgKVtaSLtavT17" target="_blank" rel="noopener noreferrer" download>
               <Button>Télécharger le jeux</Button>
             </a>
@@ -66,7 +66,7 @@ class App extends React.Component {
                     <img className="stats" src="./images/stats_archer.png" alt="stats archer" />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img className="stats" src="./images/mage.png" alt="stats mage" />
+                    <img className="stats" src="./images/stats_mage.png" alt="stats mage" />
                   </Carousel.Item>
                 </Carousel>
               </div>
