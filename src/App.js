@@ -31,7 +31,7 @@ class App extends React.Component {
 
           <div className="w-100 h-100">
             <iframe className="video" width="100%" height="100%" title="Youtube video" src="https://www.youtube.com/embed/eZLqcrDu1tE?autoplay=1&loop=1&controls=0&mute=1"></iframe>
-            <a className="download-link" href="https://drive.google.com/u/0/uc?export=download&confirm=Frq4&id=1gwjOHuXEzffKCaL61OhgKVtaSLtavT17" target="_blank" download>
+            <a className="download-link" href="https://drive.google.com/u/0/uc?export=download&confirm=Frq4&id=1gwjOHuXEzffKCaL61OhgKVtaSLtavT17" target="_blank" rel="noopener noreferrer" download>
               <Button>Télécharger le jeux</Button>
             </a>
           </div>
