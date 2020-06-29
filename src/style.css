@@ -40,7 +40,11 @@ body {
 
 .back-main img {
     width: 100%;
-    max-width: 1192px;
+    max-width: 350px;
+}
+
+.back-main-img {
+    max-width: 1192px !important;
     max-height: 543px;
 }
 
@@ -129,21 +133,14 @@ body {
     font-size: 1.2rem;
 }
 
-.video {
-    position: fixed;
-    z-index: -100;
-}
-
-.parent-download {
+.parent-download1 {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .download-link {
-    margin-bottom: 100px;
-}
-
-.download-link button {
-    border-radius: 0;
+    position: relative;
+    width: 30%;
+    max-width: 350px;
 }
