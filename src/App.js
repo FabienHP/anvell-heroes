@@ -2,6 +2,7 @@ import React from 'react';
 import "./style.css";
 import ReactPageScroller from "react-page-scroller";
 import Carousel from 'react-bootstrap/Carousel'
+import Button from "react-bootstrap/Button";
 
 class App extends React.Component {
   constructor(props) {
@@ -28,7 +29,12 @@ class App extends React.Component {
             <img src="https://zupimages.net/up/20/23/unee.png" alt="background" />
           </div>
 
-
+          <div className="w-100 h-100">
+            <iframe className="video" width="100%" height="100%" title="Youtube video" src="https://www.youtube.com/embed/eZLqcrDu1tE?autoplay=1&loop=1&controls=0&mute=1"></iframe>
+            <a className="download-link" href="https://drive.google.com/u/0/uc?export=download&confirm=Frq4&id=1gwjOHuXEzffKCaL61OhgKVtaSLtavT17" target="_blank" download>
+              <Button>Télécharger le jeux</Button>
+            </a>
+          </div>
 
           <div className="page2 row" >
             <div className="page2-max row">
@@ -60,7 +66,7 @@ class App extends React.Component {
                     <img className="stats" src="./images/stats_archer.png" alt="stats archer" />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img className="stats" src="./images/stats_archer.png" alt="stats mage" />
+                    <img className="stats" src="./images/mage.png" alt="stats mage" />
                   </Carousel.Item>
                 </Carousel>
               </div>
@@ -120,7 +126,7 @@ class App extends React.Component {
           <div className="d-flex justify-content-center align-items-center h-100">
             <div className="column col-10">
               <div className="mb-3 mt-5">
-                <h2>L'équipe d'Avell's Heroes est composé de :</h2>
+                <h2>L'équipe d'Anvell's Heroes est composé de :</h2>
               </div>
               <div className="row align-items-start">
                 <div className="column p-5">

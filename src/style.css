@@ -128,3 +128,17 @@ body {
     font-weight: bold;
     font-size: 1.2rem;
 }
+
+.video {
+    position: fixed;
+    z-index: -100;
+}
+
+.download-link {
+    position: relative;
+    top: 90%;
+    left: 50%
+}
+.download-link button {
+    border-radius: 0;
+}
