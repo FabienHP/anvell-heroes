@@ -20,7 +20,13 @@ class App extends React.Component {
     return (
       <>
         <div>
-
+          <ol className="carousel-indicators test-indicator">
+            <li className={this.state.currentPage === 0 ? "active" : ""} onClick={() => this.setState({ currentPage: 0 })}></li>
+            <li className={this.state.currentPage === 1 ? "active" : ""} onClick={() => this.setState({ currentPage: 1 })}></li>
+            <li className={this.state.currentPage === 2 ? "active" : ""} onClick={() => this.setState({ currentPage: 2 })}></li>
+            <li className={this.state.currentPage === 3 ? "active" : ""} onClick={() => this.setState({ currentPage: 3 })}></li>
+            <li className={this.state.currentPage === 4 ? "active" : ""} onClick={() => this.setState({ currentPage: 4 })}></li>
+          </ol>
         </div>
         <ReactPageScroller
           pageOnChange={this.handlePageChange}
@@ -31,7 +37,7 @@ class App extends React.Component {
             <img className="back-main-img" src="https://zupimages.net/up/20/23/unee.png" alt="background" />
 
             <a className="download-link" href="https://drive.google.com/u/0/uc?export=download&confirm=Frq4&id=1gwjOHuXEzffKCaL61OhgKVtaSLtavT17" target="_blank" rel="noopener noreferrer" download>
-              <img  src="./images/telechargment_le_jeu.png" alt="dl" />
+              <img src="./images/telechargment_le_jeu.png" alt="dl" />
             </a>
           </div>
 
