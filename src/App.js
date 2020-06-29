@@ -7,7 +7,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentPage: null,
+      currentPage: 0,
       activeIndex: 0
     };
   }
@@ -34,43 +34,42 @@ class App extends React.Component {
               <div className="page2-perso column">
                 <Carousel activeIndex={this.state.activeIndex} controls={false} indicators={false} pause={false} interval={0}>
                   <Carousel.Item>
-                    <img className="perso" src="./images/retake_seketh.png" alt="assassin" />
+                    <img className="perso m-4" src="./images/retake_seketh.png" alt="assassin" />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img className="perso" src="./images/png_arendar.png" alt="guerrier" />
+                    <img className="perso m-4" src="./images/png_arendar.png" alt="guerrier" />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img className="perso" src="./images/png_archer.png" alt="archer" />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img className="perso" src="./images/mage.png" alt="mage" />
+                    <img className="perso m-4" src="./images/png_archer.png" alt="archer" />
                   </Carousel.Item>
                 </Carousel>
                 <div className="hr"></div>
-                <img className="stats" src="https://zupimages.net/up/20/23/jtyd.png" alt="stats assassin" />
+                <Carousel activeIndex={this.state.activeIndex} controls={false} indicators={false} pause={false} interval={0}>
+                  <Carousel.Item>
+                    <img className="stats" src="./images/stats_assassin.png" alt="stats assassin" />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img className="stats" src="./images/stats_guerrier.png" alt="stats guerrier" />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img className="stats" src="./images/stats_archer.png" alt="stats archer" />
+                  </Carousel.Item>
+                </Carousel>
               </div>
 
               {/* Role bouton */}
               <div className="page2-button">
-                <div className="ligne">
-                  <div className="column" onClick={() => this.setState({ activeIndex: 0 })}>
-                    <img className="assassin" src="./images/assassin.png" alt="assassin bouton" />
-                    <p>ASSASSIN</p>
-                  </div>
-                  <div className="column" onClick={() => this.setState({ activeIndex: 1 })}>
-                    <img className="tank" src="./images/guerrier.png" alt="guerrier bouton" />
-                    <p>GUERRIER</p>
-                  </div>
+                <div className="column p-3" onClick={() => this.setState({ activeIndex: 0 })}>
+                  <img className="assassin mb-2" src="./images/assassin.png" alt="assassin bouton" />
+                  <p>ASSASSIN</p>
                 </div>
-                <div className="ligne">
-                  <div className="column" onClick={() => this.setState({ activeIndex: 2 })}>
-                    <img className="archer" src="./images/archer.png" alt="archer bouton" />
-                    <p>ARCHER</p>
-                  </div>
-                  <div className="column" onClick={() => this.setState({ activeIndex: 3 })}>
-                    <img className="mage" src="./images/mage.png" alt="mage bouton" />
-                    <p>MAGE</p>
-                  </div>
+                <div className="column p-3" onClick={() => this.setState({ activeIndex: 1 })}>
+                  <img className="tank mb-2" src="./images/guerrier.png" alt="guerrier bouton" />
+                  <p>GUERRIER</p>
+                </div>
+                <div className="column p-3" onClick={() => this.setState({ activeIndex: 2 })}>
+                  <img className="archer mb-2" src="./images/archer.png" alt="archer bouton" />
+                  <p>ARCHER</p>
                 </div>
               </div>
               {/* */}
@@ -110,31 +109,53 @@ class App extends React.Component {
             </Carousel.Item>
           </Carousel>
 
-          <div className="column">
-            <div>
-              <p>L'équipe d'Avell's Heroes est composé de :</p>
-            </div>
-            <div className="row">
-              <div className="column">
-                <img src="" alt="logo anvell's" />
-                <p>GAME ART :</p>
-                <p>Gad ELBEZE</p>
-                <p>Alex DUVIVIER</p>
-                <p>Martin BULTEAU</p>
+          <div className="d-flex justify-content-center align-items-center h-100">
+            <div className="column col-102">
+              <div className="mb-3">
+                <h2>L'équipe d'Avell's Heroes est composé de :</h2>
               </div>
+              <div className="row align-items-start">
+                <div className="column p-5">
+                  <div className="text-center pb-3">
+                    <img src="./images/icon.png" alt="logo anvell's" />
+                    <h4>GAME ART :</h4>
+                  </div>
+                  <a href="http://localhost:3000" target="_blank" rel="noopener noreferrer">
+                    <h5><u>Gad ELBEZE</u></h5>
+                  </a>
+                  <a href="http://localhost:3000" target="_blank" rel="noopener noreferrer">
+                    <h5><u>Alex DUVIVIER</u></h5>
+                  </a>
+                  <a href="http://localhost:3000" target="_blank" rel="noopener noreferrer">
+                    <h5><u>Martin BULTEAU</u></h5>
+                  </a>
+                </div>
 
-              <div className="column">
-                <img src="" alt="logo anvell's" />
-                <p>GAME DESIGN :</p>
-                <p>Valentin FIETTE</p>
-              </div>
+                <div className="column p-5">
+                  <div className="text-center pb-3">
+                    <img src="./images/icon.png" alt="logo anvell's" />
+                    <h4>GAME DESIGN :</h4>
+                  </div>
+                  <a href="https://www.behance.net/OriHope" target="_blank" rel="noopener noreferrer">
+                    <h5 className="text-"><u>Valentin FIETTE</u></h5>
+                  </a>
+                </div>
 
-              <div className="column">
-                <img src="" alt="logo anvell's" />
-                <p>TECH ART :</p>
-                <p>Baptiste RYKNER</p>
-                <p>Elias KABLI</p>
-                <p>Pablo BERTON</p>
+                <div className="column p-5">
+                  <div className="text-center pb-3">
+                    <img src="./images/icon.png" alt="logo anvell's" />
+                    <h4>TECH ART :</h4>
+                  </div>
+                  <a href="http://localhost:3000" target="_blank" rel="noopener noreferrer">
+                    <h5><u>Baptiste RYKNER</u></h5>
+                  </a>
+                  <a href="http://localhost:3000" target="_blank" rel="noopener noreferrer">
+                    <h5><u>Elias KABLI</u></h5>
+                  </a>
+                  <a href="http://localhost:3000" target="_blank" rel="noopener noreferrer">
+                    <h5><u>Pablo BERTON</u></h5>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
