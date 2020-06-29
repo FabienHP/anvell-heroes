@@ -61,15 +61,15 @@ class App extends React.Component {
               <div className="page2-button">
                 <div className="column p-3" onClick={() => this.setState({ activeIndex: 0 })}>
                   <img className="assassin mb-2" src="./images/assassin.png" alt="assassin bouton" />
-                  <p>ASSASSIN</p>
+                  <p>SEBETH</p>
                 </div>
                 <div className="column p-3" onClick={() => this.setState({ activeIndex: 1 })}>
                   <img className="tank mb-2" src="./images/guerrier.png" alt="guerrier bouton" />
-                  <p>GUERRIER</p>
+                  <p>ARENDAR</p>
                 </div>
                 <div className="column p-3" onClick={() => this.setState({ activeIndex: 2 })}>
                   <img className="archer mb-2" src="./images/archer.png" alt="archer bouton" />
-                  <p>ARCHER</p>
+                  <p>ILLYZEL</p>
                 </div>
               </div>
               {/* */}
@@ -110,8 +110,8 @@ class App extends React.Component {
           </Carousel>
 
           <div className="d-flex justify-content-center align-items-center h-100">
-            <div className="column col-102">
-              <div className="mb-3">
+            <div className="column col-10">
+              <div className="mb-3 mt-5">
                 <h2>L'équipe d'Avell's Heroes est composé de :</h2>
               </div>
               <div className="row align-items-start">
@@ -120,13 +120,13 @@ class App extends React.Component {
                     <img src="./images/icon.png" alt="logo anvell's" />
                     <h4>GAME ART :</h4>
                   </div>
-                  <a href="http://localhost:3000" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.artstation.com/gadelbeze" target="_blank" rel="noopener noreferrer">
                     <h5><u>Gad ELBEZE</u></h5>
                   </a>
-                  <a href="http://localhost:3000" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.artstation.com/alexduvivier" target="_blank" rel="noopener noreferrer">
                     <h5><u>Alex DUVIVIER</u></h5>
                   </a>
-                  <a href="http://localhost:3000" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.artstation.com/martinbulteau" target="_blank" rel="noopener noreferrer">
                     <h5><u>Martin BULTEAU</u></h5>
                   </a>
                 </div>
@@ -146,15 +146,13 @@ class App extends React.Component {
                     <img src="./images/icon.png" alt="logo anvell's" />
                     <h4>TECH ART :</h4>
                   </div>
-                  <a href="http://localhost:3000" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.artstation.com/felyx" target="_blank" rel="noopener noreferrer">
                     <h5><u>Baptiste RYKNER</u></h5>
                   </a>
-                  <a href="http://localhost:3000" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.artstation.com/bbrody" target="_blank" rel="noopener noreferrer">
                     <h5><u>Elias KABLI</u></h5>
                   </a>
-                  <a href="http://localhost:3000" target="_blank" rel="noopener noreferrer">
-                    <h5><u>Pablo BERTON</u></h5>
-                  </a>
+                  <h5>Pablo BERTON</h5>
                 </div>
               </div>
             </div>
