@@ -160,8 +160,24 @@ class App extends React.Component {
                     <h4>GAME DESIGN :</h4>
                   </div>
                   <a href="https://www.behance.net/OriHope" target="_blank" rel="noopener noreferrer">
-                    <h5 className="text-"><u>Valentin FIETTE</u></h5>
+                    <h5><u>Valentin FIETTE</u></h5>
                   </a>
+                </div>
+
+                <div className="column p-5">
+                  <div className="text-center pb-3">
+                    <img src="./images/icon.png" alt="logo anvell's" />
+                    <h4>SOUND DESIGN :</h4>
+                  </div>
+                  <h5>Christophe DUVIVIER</h5>
+                </div>
+
+                <div className="column p-5">
+                  <div className="text-center pb-3">
+                    <img src="./images/icon.png" alt="logo anvell's" />
+                    <h4>DEV WEB :</h4>
+                  </div>
+                  <h5>Fabien FIETTE</h5>
                 </div>
 
                 <div className="column p-5">
@@ -177,6 +193,8 @@ class App extends React.Component {
                   </a>
                   <h5>Pablo BERTON</h5>
                 </div>
+              </div>
+              <div className="row align-items-start">
               </div>
             </div>
           </div>
