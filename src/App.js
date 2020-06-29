@@ -2,7 +2,6 @@ import React from 'react';
 import "./style.css";
 import ReactPageScroller from "react-page-scroller";
 import Carousel from 'react-bootstrap/Carousel'
-import Button from "react-bootstrap/Button";
 
 class App extends React.Component {
   constructor(props) {
@@ -20,6 +19,9 @@ class App extends React.Component {
   render = () => {
     return (
       <>
+        <div>
+
+        </div>
         <ReactPageScroller
           pageOnChange={this.handlePageChange}
           customPageNumber={this.state.currentPage}
