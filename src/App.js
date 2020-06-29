@@ -28,6 +28,8 @@ class App extends React.Component {
             <img src="https://zupimages.net/up/20/23/unee.png" alt="background" />
           </div>
 
+
+
           <div className="page2 row" >
             <div className="page2-max row">
               {/* Perso/stats */}
@@ -42,6 +44,9 @@ class App extends React.Component {
                   <Carousel.Item>
                     <img className="perso m-4" src="./images/png_archer.png" alt="archer" />
                   </Carousel.Item>
+                  <Carousel.Item>
+                    <img className="perso m-4" src="./images/althea.png" alt="archer" />
+                  </Carousel.Item>
                 </Carousel>
                 <div className="hr"></div>
                 <Carousel activeIndex={this.state.activeIndex} controls={false} indicators={false} pause={false} interval={0}>
@@ -54,22 +59,25 @@ class App extends React.Component {
                   <Carousel.Item>
                     <img className="stats" src="./images/stats_archer.png" alt="stats archer" />
                   </Carousel.Item>
+                  <Carousel.Item>
+                    <img className="stats" src="./images/stats_archer.png" alt="stats mage" />
+                  </Carousel.Item>
                 </Carousel>
               </div>
 
               {/* Role bouton */}
               <div className="page2-button">
-                <div className="column p-3" onClick={() => this.setState({ activeIndex: 0 })}>
-                  <img className="assassin mb-2" src="./images/assassin.png" alt="assassin bouton" />
-                  <p>SEBETH</p>
+                <div className="column" onClick={() => this.setState({ activeIndex: 0 })}>
+                  <img className="mb-4" src="./images/sebeth_button.png" alt="assassin bouton" />
                 </div>
-                <div className="column p-3" onClick={() => this.setState({ activeIndex: 1 })}>
-                  <img className="tank mb-2" src="./images/guerrier.png" alt="guerrier bouton" />
-                  <p>ARENDAR</p>
+                <div className="column" onClick={() => this.setState({ activeIndex: 1 })}>
+                  <img className="mb-4" src="./images/arendar.png" alt="guerrier bouton" />
                 </div>
-                <div className="column p-3" onClick={() => this.setState({ activeIndex: 2 })}>
-                  <img className="archer mb-2" src="./images/archer.png" alt="archer bouton" />
-                  <p>ILLYZEL</p>
+                <div className="column" onClick={() => this.setState({ activeIndex: 2 })}>
+                  <img className="mb-4" src="./images/illyzel_button.png" alt="archer bouton" />
+                </div>
+                <div className="column" onClick={() => this.setState({ activeIndex: 3 })}>
+                  <img className="mb-4" src="./images/althea_button.png" alt="archer bouton" />
                 </div>
               </div>
               {/* */}
